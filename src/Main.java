@@ -10,5 +10,9 @@ public class Main {
         myDoctor = new Doctor("Carlos Palacios", "Odontologia");
         System.out.println(myDoctor.name);
         System.out.println(myDoctor.speciality);
+
+        Patient patient;
+
+        patient = new Patient("Carlos", "ca@ma.co");
     }
 }
