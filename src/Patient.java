@@ -30,5 +30,13 @@ public class Patient extends User {
         return this.height + "Kg.";
     }
 
+    public String getBlood() {
+        return this.blood;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nAge: "+ birthday + "\nWeight: " + getWeigth() + "\nHeigth: " + getHeigth() + "\nBlood: " + getBlood();
+    }
     
 }

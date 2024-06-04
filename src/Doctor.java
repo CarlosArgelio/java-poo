@@ -28,6 +28,11 @@ public class Doctor extends User {
         return availableAppointment;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nSpeciality: " + speciality + "\nAvailable " + availableAppointment.toString();
+    }
+
     public static class AvailableAppointment {
         private int id_availableAppointment;
         private Date date;
@@ -60,6 +65,11 @@ public class Doctor extends User {
 
         public String getTime () {
             return this.time;
+        }
+
+        @Override
+        public String toString() {
+            return "Available Appointments \nDate: " + date + "\nTime:" + time;
         }
     }
 

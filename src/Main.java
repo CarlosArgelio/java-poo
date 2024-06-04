@@ -17,13 +17,15 @@ public class Main {
         System.out.println(myDoctor.getAvailableAppointments());
 
         // aA = available Appointments
-        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
-            System.out.println(aA.getDate() + " " + aA.getTime());
-        }
+        // for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
+        //     System.out.println(aA.getDate() + " " + aA.getTime());
+        // }
  
 
-        // Patient patient;
+        Patient patient;
 
-        // patient = new Patient("Carlos", "ca@ma.co");
+        patient = new Patient("Carlos", "ca@ma.co");
+
+        System.out.println(patient);
     }
 }
