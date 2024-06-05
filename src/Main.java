@@ -1,7 +1,6 @@
 // import static ui.UIMenu.*;
 
 import java.util.Date;
-
 import model.Doctor;
 import model.Patient;
 
@@ -16,6 +15,8 @@ public class Main {
 
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10pm");
+
+        myDoctor.showDataUser();
 
         System.out.println(myDoctor.getAvailableAppointments());
 
