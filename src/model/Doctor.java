@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class Doctor extends User {
     String speciality;
+    private ArrayList<AvailableAppointment> availableAppointment = new ArrayList<>();
     
     public Doctor(String name, String email) {
         super(name, email);
@@ -21,8 +22,6 @@ public class Doctor extends User {
         this.speciality = speciality;
     }
 
-
-    ArrayList<AvailableAppointment> availableAppointment = new ArrayList<>();
     public void addAvailableAppointment(String date, String time) {
         availableAppointment.add(new AvailableAppointment(date, time));
     }
@@ -70,11 +69,11 @@ public class Doctor extends User {
             this.date = date;
         }
 
-        public Date getDate () {
+        public Date getDate (String DATE) {
             return this.date;
         }
 
-        public String getDate (String DATE) {
+        public String getDate () {
             return format.format(this.date);
         }
 
